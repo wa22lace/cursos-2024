@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssteste.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="foto/fivecoin.png" type="image/x-icon">
+
+    <title>Walcursosonline</title>
+
+</head>
+<body>
+    
+   <header class="header">
+        <div onclick="logo()" class="logo">
+            <img  src="foto/cursos.png" alt="foto-logo">
+        </div>
+    
+    
+      
+        <input id="searchbar" onkeyup="Pesquisa_itens()" type="text"
+        name="search" placeholder="Pesquise um produto "  autocomplete="off" onclick="pesquisa()">
+
+        <!--
+        <div class="href-cursos">
+        <a href="">cursos</a>
+        </div>
+             -->
+   </header>
+    <div class="menu">
+        
+        <div class="foto-promocao">
+            <picture>
+                <source media="(max-width: 800px )" srcset="foto/foto-555.png">
+                <img class="imagem-foto" src="foto/img.png" alt="foto">
+            </picture>
+        </div>
+
+        <div class="grade-itens">
+            <div class="marketing" onclick="marketing()">
+                Marketing
+            </div>
+            <div class="receitas" onclick="receitas()">
+                Receitas
+            </div>
+            <div class="exercícios" onclick="exercicios()">
+                Exercícios
+            </div>
+            <div class="alimentacao" onclick="alimentaçao()">
+                Alimentaçâo
+            </div>
+            <div class="confeitaria" onclick="confeitaria()">
+                Confeitaria
+            </div>
+            <div class="outros" onclick="outros()">
+                Outros
+            </div>
+        </div>
+    
+        <div >
+            <h1 class="texto1">Preços Exclusivos </h1>
+        </div>
+
+       <div id="menu-produtos">
+        <div id="botao-esquerda" onclick="direcao(1)"> 
+            <img class="voltaricon" src="foto/icons8-voltar-48.png" alt="icon_voltar"></div>
+        <div class="produto1" onclick="produto1()">
+            <img src="confeitarias/produto1/produto1.png" alt="foto-produto">
+            <div class="descricao" >
+                Confeitaria online 
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 127,00
+                </p>
+                <div id="valor">
+                    R$ 37,00 <div class="a-vista">á vista</div>
+                </div>
+                Ou 5x de R$ 8,05
+
+            </div>
+           
+            <li>
+                <a href="https://go.hotmart.com/T87543077D">Compra</a>
+            </li>
+        </div>
+        <div class="produto2" onclick="produto2()">
+            <img src="marketing/produto1/produto1.png" alt="foto-produto">
+            <div class="descricao">
+                Formula do negocio online 
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 1.699
+                </p>
+                <div id="valor">
+                    R$ 297,00 <div class="a-vista">á vista</div>
+                </div>
+                Ou R$ 12 x de 28,94
+              
+            </div>
+
+            <li>
+                <a href="https://go.hotmart.com/G87240731C">Compra</a>
+            </li>
+        </div>
+        <div class="produto3" onclick="produto3()">
+            <img src="receitas/produto1/produto1.png" alt="foto-produto">
+            <div class="descricao">
+                Curso de Marmitas Fitiness Saudáveis
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 169,90  
+                </p>
+                <div id="valor">
+                    R$ 47,90 <div class="a-vista">á vista</div>
+                </div>
+                Ou 6 x de R$ 8,81 
+                
+            </div>
+            <li>
+                <a href="https://go.hotmart.com/J87922623O">Compra</a>
+            </li>
+        </div>
+        <div class="produto4" onclick="produto4()">
+            <img src="exercicios/produto1/produto1.png" alt="foto-produto">
+            <div class="descricao">
+                Nutrição e Exercícios
+            </div>
+           
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 89,99 <div class="a-vista">á vista</div>
+                </div>
+                Ou 4x de R$ 24,15 
+              </div>
+            <li>
+                <a href="https://go.hotmart.com/H87959994L">Compra</a>
+                
+            </li>
+        </div>
+        <div class="produto5" onclick="produto5()">
+            <img src="alimentação/produto1/produto1.png" alt="foto-produto">
+            <div class="descricao">
+                Alimentação Balanceada
+            </div>
+           
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                R$ 53,70 <div class="a-vista">á vista</div>
+                </div>
+                
+            </div>
+            <li>
+                <a href="https://go.hotmart.com/Y87957142B">Compra</a>
+            </li>
+        </div>
+        <div class="produto6" onclick="produto6()">
+            <img src="marketing/produto2/produto2.png" alt="foto-produto">
+            <div class="descricao">
+                Venda Mais em Menos Tempo
+            </div>
+            
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 3,90 <div class="a-vista">á vista</div>
+                </div> 
+            
+            </div>
+            <li>
+                <a href="https://go.hotmart.com/G87253891Q">Compra</a>
+            </li>
+        </div>
+        <div class="produto7" onclick="produto7()">
+            <img src="confeitarias/produto2/produto6.png" alt="foto-produto">
+            <div class="descricao">
+                Venda Todo Dia - O Ouro da Confeitaria
+            </div>
+            
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>    
+                <div id="valor">
+                    R$ 37,00 <div class="a-vista">á vista</div>
+                </div>
+                Ou 5 x R$ 8,05
+            </div>
+            <li>
+                <a href="https://go.hotmart.com/S87914505I">Compra</a>
+            </li>
+        </div>
+        <div class="produto8" onclick="produto8()">
+            <img src="receitas/produto2/produto2.png" alt="foto-produto">
+            <div class="descricao">
+                201 Receitas LOW CARB
+            </div>
+           
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                37,00 <div class="a-vista">á vista</div>
+                </div>
+                Ou 5x de R$ 8,05
+
+            </div>
+            <li>
+                <a href="https://go.hotmart.com/V87922303Y">Compra</a>
+            </li>
+        </div>
+        <div class="produto9" onclick="produto9()">
+            <img src="alimentação/produto2/produto2.png" alt="foto-produto">
+            <div class="descricao">
+                Cardápio do Bebê
+            </div>
+            
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                R$ 29,00 <div class="a-vista">á vista</div>
+                </div>
+                Ou 4 x de R$ 7,78
+
+            </div>
+            <li>
+                <a href="https://go.hotmart.com/M87957370C">Compra</a>
+            </li>
+        </div>
+        <div id="botao-direita" onclick="direcao(2)"> 
+        <img class="avançaricon" src="foto/icons8-avançar-48.png" alt="avançar-icon">
+        </div>
+       </div>
+
+       <h1 class="texto1">
+        Aproveite as ofertas de Hoje
+       </h1>
+
+    <div id="menu-produtos2">
+        <div id="botao-esquerda" onclick="segundadirecao(1)"> 
+        <img class="voltaricon" src="foto/icons8-voltar-48.png" alt="voltar-icon"> </div>
+        <div class="produto1" onclick="produto10()">
+            <img src="receitas/produto3/produto3.png" alt="foto-produto">
+            <div class="descricao">
+                Super Receitas Para AIR FRYER
+            </div>
+            <div class="price">
+                <p>
+                    R$ 388
+                </p>
+                <div id="valor">
+                    R$ 24,90 <div class="a-vista">á vista</div>
+                </div>
+                Ou 3x de R$ 8,78
+            </div>
+            <li>
+                <a href="https://go.hotmart.com/F87922350C">Compra</a>
+            </li>
+        </div>
+        <div class="produto2"onclick="produto12()">
+            <img src="exercicios/produto3/produto3.png" alt="foto-produto">
+            <div class="descricao">
+                Fisiologia do Exercício
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    RS 00,00
+                 </p>
+                 <div id="valor">
+                    R$ 49,99 <div class="a-vista">á vista</div>
+                 </div>
+                
+            </div>
+
+            <li>
+                <a href="https://go.hotmart.com/G87960549U">Compra</a>
+            </li>
+        </div>
+        <div class="produto3" onclick="produto13()">
+            <img src="alimentação/produto3/produto3.png" alt="foto-produto">
+            <div class="descricao"> 
+                Guia Alimentar – Alimentação Saudável
+            </div>
+            
+            <div class="price">
+                <p class="preco-cortado">
+                    RS 31,99
+                </p>
+                <div id="valor">
+                    R$ 28,79 <div class="a-vista">á vista</div>
+                </div>
+                Ou 3x de R$ 10,16
+            </div>
+
+            <li>
+                <a href="https://go.hotmart.com/U87957658E">Compra</a>
+            </li>
+        </div>
+        <div class="produto4" onclick="produto14()">
+            <img src="confeitarias/produto3/produto7.png" alt="foto-produto">
+            <div class="descricao">
+                Formação em Bolos Decorados
+            </div>
+            
+            <div class="price">
+                <p class="preco-cortado">
+                    RS 597,00
+                </p> 
+                <div id="valor">
+                    R$ 97,00 <div class="a-vista">á vista</div>
+                </div>
+                Ou 12x de R$ 9,68
+            </div>
+
+            <li>
+                <a href="https://go.hotmart.com/T87914523J">Compra</a>
+            </li>
+        </div>
+        <div class="produto5" onclick="produto15()">
+            <img src="marketing/produto3/produto3.png" alt="foto-produto">
+            <div class="descricao">
+                Curso Renda Extra
+            </div>
+            
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                 </p>
+                 <div id="valor">
+                    R$ 110,00 <div class="a-vista">á vista</div>
+                 </div>
+                Ou 12x de R$ 10,98 
+            </div>
+
+            <li>
+                <a href="https://go.hotmart.com/Q87952772L">Compra</a>
+            </li>
+        </div>
+        <div class="produto6" onclick="produto16()">
+            <img src="exercicios/produto4/produto4.png" alt="foto-produto">
+            <div class="descricao">
+                Exercícios Fitness
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                R$ 197,00 <div class="a-vista">á vista</div>
+                </div>
+                
+            </div>
+
+            <li>
+                <a href="https://go.hotmart.com/N87960730U">Compra</a>
+            </li>
+        </div>
+        <div class="produto7" onclick="produto17()">
+            <img src="alimentação/produto4/produto4.png" alt="foto-produto">
+            <div class="descricao">
+                Noções sobre nutrição
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 119,99       <div class="a-vista">á vista</div>
+                </div>
+            
+            </div>
+            <li>
+                <a href="https://go.hotmart.com/D87957896N">Compra</a>
+            </li>
+        </div>
+        <div class="produto8" onclick="produto18()">
+            <img src="marketing/produto4/produto4.png" alt="foto-produto">
+            <div class="descricao">
+                Do Marketing ao Marketing Digital
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 97,00 <div class="a-vista">á vista</div>
+                </div>
+            
+            </div>
+            
+            <li>
+                <a href="https://go.hotmart.com/M87953232E">Compra</a>
+            </li>
+        </div>
+        <div class="produto9" onclick="produto19()">
+            <img src="confeitarias/produto4/produto8.png" alt="foto-produto">
+            <div class="descricao">
+                Slice Cakes - Da Fatia ao Bolo Perfeito
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                      R$ 97,00 <div class="a-vista">á vista</div>
+                </div>
+                Ou 12x de R$ 9,45
+            </div>
+            
+
+            <li>
+                <a href="https://go.hotmart.com/O88299998M">Compra</a>
+            </li>
+        </div>
+        <div id="botao-direita" onclick="segundadirecao(2)"> 
+        <img class="avançaricon" src="foto/icons8-avançar-48.png" alt="avançar-icon">
+        </div>
+       </div>
+       
+       <h1 class="texto1">
+        Corra ainda da tempo
+       </h1>
+    
+       <div id="menu-produtos-ultimo">
+        <div id="botao-esquerda" onclick="direcao1(1)"> 
+        <img class="voltaricon" src="foto/icons8-voltar-48.png" alt="voltar-icon">
+        </div>
+        <div class="produto11" onclick="produto21()">
+            <img src="marketing/produto5/produto5.png" alt="foto-produto">
+            <div class="descricao">
+                Marketing Digital - E-Mail Marketing
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 149,00        <div class="a-vista">á vista</div>
+                </div>
+               Ou 12x de R$ 14,87
+            </div>
+
+            <li>
+                <a href="https://go.hotmart.com/B87953575U">Compra</a>
+            </li>
+        </div>
+        <div class="produto22" onclick="produto22()">
+            <img src="confeitarias/produto5/produto5.png" alt="foto-produto">
+            <div class="descricao">
+                Gps Da Confeitaria
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                R$ 39,90 <div class="a-vista">á vista</div>
+                </div>
+                Ou 5x de R$ 8,69
+            </div>
+
+            <li>
+                <a href="https://go.hotmart.com/B87922330O">Compra</a>
+            </li>
+        </div>
+        <div class="produto33" onclick="produto23()">
+            <img src="receitas/produto5/produto5.png" alt="foto-produto">
+            <div class="descricao">
+                Curso de sacolé, geladinho, Gourmett...
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 89,90
+                </p>
+                <div id="valor">
+                    R$ 39,90         <div class="a-vista">á vista</div>
+                </div>
+                Ou 4 x de R$ 10,71
+            </div>
+
+            <li>
+                <a href="https://go.hotmart.com/V87922646B">Compra</a>
+            </li>
+        </div>
+        <div class="produto44" onclick="produto24()">
+            <img src="exercicios/produto5/produto5.png" alt="foto-produto">
+            <div class="descricao">
+                Exercícios Cardiofitness
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 67,00        <div class="a-vista">á vista</div>
+                </div>
+                Ou 8x de R$ 9,50
+            </div>
+           
+            <li>
+                <a href="https://go.hotmart.com/X87960912Y">Compra</a>
+            </li>
+        </div>
+        <div class="produto55" onclick="produto25()">
+            <img src="alimentação/produto5/produto5.png" alt="foto-produto">
+            <div class="descricao">
+                O Poder Dos Alimentos Naturais
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 49,90        <div class="a-vista">á vista</div>
+                </div>
+               Ou 3 x de R$ 16,63
+            </div>
+    
+            <li>
+                <a href="https://go.hotmart.com/A87958072F">Compra</a>
+            </li>
+        </div>
+        <div class="produto66" onclick="produto26()">
+            <img src="receitas/produto6/produto6.png" alt="foto-produto">
+            <div class="descricao">
+                Receitas Diversas
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 29,90        <div class="a-vista">á vista</div>
+                </div>
+                
+            </div>
+            <li>
+                <a href="https://go.hotmart.com/L87951389M">Compra</a>
+            </li>
+        </div>
+        <div class="produto77" onclick="produto27()">
+            <img src="confeitarias/produto6/produto6.png" alt="foto-produto">
+            <div class="descricao">
+                Sucesso com Copos da Felicidade
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 97,00
+                </p>
+                <div id="valor">
+                    R$ 24,90        <div class="a-vista">á vista</div>
+                </div>
+                Ou 3 x de R$ 8,78
+            </div>
+            <li>
+                <a href="https://go.hotmart.com/U87914430M">Compra</a>
+            </li>
+        </div>
+        <div class="produto88" onclick="produto28()">
+            <img src="exercicios/produto6/produto6.png" alt="foto-produto">
+            <div class="descricao">
+                Exercícios Sistêmicos
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 797,00        <div class="a-vista">á vista</div>
+                </div>
+                Ou 12 x de R$ 79,54 
+            </div>
+            <li>
+                <a href="https://go.hotmart.com/O87961097L">Compra</a>
+            </li>
+        </div>
+        <div class="produto99" id="produto9ultimo" onclick="produto29()">
+            <img src="alimentação/produto6/produto6.png" alt="foto-produto">
+            <div class="descricao">
+                Alimentação Saudável
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 29,90        <div class="a-vista">á vista</div>
+                </div>
+                
+            </div>
+            <li>
+                <a href="https://go.hotmart.com/R87958557Q">Compra</a>
+            </li>
+        </div>
+        <div id="botao-direita" onclick="direcao1(2)">
+        <img class="avançaricon" src="foto/icons8-avançar-48.png" alt="avançar-icon">
+        </div>
+       </div>
+
+    <h1 class="texto1">
+        Estudo de Qualidade sò Aqui
+    </h1>
+
+       <div id="menu-produtos-ultimo2">
+        <div id="botao-esquerda" onclick="direcao3(1)"> 
+        <img class="voltaricon" src="foto/icons8-voltar-48.png" alt="voltar-icon">
+        </div>
+        <div class="produto1" onclick="produto31()">
+            <img src="exercicios/produto7/produto7.png" alt="foto-produto">
+            <div class="descricao">
+                Exercícios Sem Esforço
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 42,00        <div class="a-vista">á vista</div>
+                </div>
+                Ou 6x de R$ 7,72
+            </div>
+      
+            <li>
+                <a href="https://go.hotmart.com/N87961305A">Compra</a>
+            </li>
+        </div>
+        <div class="produto2" onclick="produto32()">
+            <img src="alimentação/produto7/produto7.png" alt="foto-produto">
+            <div class="descricao">
+                Liberdade Alimentar
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 90,00        <div class="a-vista">á vista</div>
+                </div>
+                Ou 6x de R$ 16,55
+            </div>
+            
+            <li>
+                <a href="https://go.hotmart.com/P87958735V">Compra</a>
+            </li>
+        </div>
+        <div class="produto3" onclick="produto33()">
+            <img src="marketing/produto7/produto7.png" alt="foto-produto">
+            <div class="descricao">
+                Marketing
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                R$ 20,00 <div class="a-vista">á vista</div>
+                </div>
+                
+            </div>
+          
+            <li>
+                <a href="https://go.hotmart.com/Q87955720A">Compra</a>
+            </li>
+        </div>
+        <div class="produto4" onclick="produto34()">
+            <img src="confeitarias/produto7/produto7.png" alt="foto-produto">
+            <div class="descricao">
+                Método Ovos de Ouro
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 89,90        <div class="a-vista">á vista</div>
+                </div>
+                Ou 10 x de R$ 10,48
+            </div>
+           
+            <li>
+                <a href="https://go.hotmart.com/G87949704V">Compra</a>
+            </li>
+        </div>
+        <div class="produto5" onclick="produto35()">
+            <img src="receitas/produto7/produto7.png" alt="foto-produto">
+            <div class="descricao">
+                Receitando
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 46,00        <div class="a-vista">á vista</div>
+                </div>
+                Ou em 4x de R$ 12,34
+            </div>
+            
+            <li>
+                <a href="https://go.hotmart.com/G87951686K">Compra</a>
+            </li>
+        </div>
+        <div class="produto6" onclick="produto36()">
+            <img src="marketing/produto8/produto8.png" alt="foto-produto">
+            <div class="descricao">
+                Marketing na Internet - Os Segredos
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 99,90
+                </p>
+                <div id="valor">
+                    R$ 27,00        <div class="a-vista">á vista</div>
+                </div>
+                Ou 3 x de R$ 9,53
+            </div>
+           
+            <li>
+                <a href="https://go.hotmart.com/C87956234E">Compra</a>
+            </li>
+        </div>
+        <div class="produto7" onclick="produto37()">
+            <img src="alimentação/produto8/produto8.png" alt="foto-produto">
+            <div class="descricao">
+                Saúde Alimentar
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 63,00        <div class="a-vista">á vista</div>
+                </div>
+                Ou 7 x de R$ 9,00
+            </div>
+           
+            <li>
+                <a href="https://go.hotmart.com/L87958894K">Compra</a>
+            </li>
+        </div>
+        <div class="produto8" onclick="produto38()">
+            <img src="receitas/produto8/produto8.png" alt="foto-produto">
+            <div class="descricao">
+                Todas as receitas!
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 349,90      <div class="a-vista">á vista</div>
+                </div>
+                Ou em 12x de R$ 34,92
+            </div>
+    
+            <li>
+                <a href="https://go.hotmart.com/M87951997P">Compra</a>
+            </li>
+        </div>
+        <div class="produto9" onclick="produto39()">
+            <img src="confeitarias/produto8/produto8.png" alt="foto-produto">
+            <div class="descricao">
+                Fábrica Bolos Caseiros Lucrativos 2.0
+            </div>
+            <div class="price">
+                <p class="preco-cortado">
+                    R$ 00,00
+                </p>
+                <div id="valor">
+                    R$ 97,00     <div class="a-vista">á vista</div>
+                </div>
+                Ou 5 x de R$ 21,11
+            </div>
+           <li>
+                <a href="https://go.hotmart.com/X87950312P">Compra</a>
+            </li>
+        </div>
+        <div id="botao-direita" onclick="direcao3(2)"> 
+        <img class="avançaricon" src="foto/icons8-avançar-48.png" alt="avançar-icon">
+        </div>
+        </div>
+   
+    <footer> 
+        Contatos: <img id="seta" src="foto/sinal-de-seta-para-baixo-para-navegar.png" alt="foto-para-baixo">
+        <br>
+        (99) 98526-5037 <img id="whaticon" src="foto/bolha-de-bate-papo.png" alt="foto-icon-whatssap" onclick="logo_what()">
+        <br>
+        Cep: 65905-330
+
+       <div onclick="apoio()" class="apoi">
+        Apoie a pagína Aqui
+        <br>
+       </div>
+<br>
+    </footer>
+
+</body>
+<script type="text/javascript" src="index.js"></script>
+
+
+</html>
