@@ -2,7 +2,7 @@ const butao = document.getElementById('teste')
 
 
 
-setTimeout(() =>{butao.click();},400000);
+setTimeout(() =>{butao.click();},4000);
 
 
 var teste = document.getElementById('teste');
